@@ -2,68 +2,30 @@
 
 namespace Modules\Amazon\Providers;
 
-use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+//--- bases ---
+use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
-class RouteServiceProvider extends ServiceProvider
-{
+/**
+ * Class RouteServiceProvider
+ * @package Modules\Amazon\Providers
+ */
+class RouteServiceProvider extends XotBaseRouteServiceProvider {
     /**
      * The module namespace to assume when generating URLs to actions.
      *
      * @var string
      */
-    protected $moduleNamespace = 'Modules\Amazon\Http\Controllers';
-
+    protected string $moduleNamespace = 'Modules\Amazon\Http\Controllers';
     /**
-     * Called before routes are registered.
+     * The module directory.
      *
-     * Register any model bindings or pattern based filters.
-     *
-     * @return void
+     * @var string
      */
-    public function boot()
-    {
-        parent::boot();
-    }
-
+    protected string $module_dir = __DIR__;
     /**
-     * Define the routes for the application.
+     * The module namespace.
      *
-     * @return void
+     * @var string
      */
-    public function map()
-    {
-        $this->mapApiRoutes();
-
-        $this->mapWebRoutes();
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapWebRoutes()
-    {
-        Route::middleware('web')
-            ->namespace($this->moduleNamespace)
-            ->group(module_path('Amazon', '/Routes/web.php'));
-    }
-
-    /**
-     * Define the "api" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapApiRoutes()
-    {
-        Route::prefix('api')
-            ->middleware('api')
-            ->namespace($this->moduleNamespace)
-            ->group(module_path('Amazon', '/Routes/api.php'));
-    }
-}
+    protected string $module_ns = __NAMESPACE__;
+}//end class RouteServiceProvider

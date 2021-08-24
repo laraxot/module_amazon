@@ -1,17 +1,24 @@
+//--------------
+https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html#php
+qui c'e' il file per creare la repository 
+https://github.com/laraxot/paapi5-php-sdk
+//--------------------
+
+
 https://amazon-affiliate.eu/it/i-migliori-10-plugin-wordpress-per-blogger/
 
 
-https://github.com/aws/aws-sdk-php-laravel
+https://github.com/aws/aws-sdk-php-laravel - 1.4k star, 2 anni fa
 
-https://github.com/keithbrink/amazon-mws-laravel      !
+https://github.com/keithbrink/amazon-mws-laravel      ! 22 star, 12 mesi fa
 
-https://github.com/looxis/laravel-amazon-mws
+https://github.com/looxis/laravel-amazon-mws 19 star, 
 
 https://github.com/rossjcooper/laravel-amazon-products
 
 https://github.com/oanhnn/laravel-aws
 
-https://github.com/kawax/laravel-amazon-product-api    !
+https://github.com/kawax/laravel-amazon-product-api    ! 59 star, 7giorni fa
 
 https://github.com/Tapha/mws-laravel
 
