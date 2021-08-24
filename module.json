@@ -1,0 +1,13 @@
+{
+    "name": "Amazon",
+    "alias": "amazon",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Amazon\\Providers\\AmazonServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
