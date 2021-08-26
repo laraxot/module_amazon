@@ -1,31 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Amazon\Providers;
 
 //--- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 /**
- * Class RouteServiceProvider
- * @package Modules\Amazon\Providers
+ * Class RouteServiceProvider.
  */
 class RouteServiceProvider extends XotBaseRouteServiceProvider {
     /**
      * The module namespace to assume when generating URLs to actions.
-     *
-     * @var string
      */
     protected string $moduleNamespace = 'Modules\Amazon\Http\Controllers';
     /**
      * The module directory.
-     *
-     * @var string
      */
     protected string $module_dir = __DIR__;
     /**
      * The module namespace.
-     *
-     * @var string
      */
     protected string $module_ns = __NAMESPACE__;
 }//end class RouteServiceProvider

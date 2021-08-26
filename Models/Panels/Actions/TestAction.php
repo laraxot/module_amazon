@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Amazon\Models\Panels\Actions;
 
 //-------- models -----------
@@ -14,13 +16,8 @@ use Modules\Xot\Models\Panels\Actions\XotBasePanelAction;
  * Class TestAction.
  */
 class TestAction extends XotBasePanelAction {
-    /**
-     * @var bool
-     */
     public bool $onItem = true;
-    /**
-     * @var bool
-     */
+
     public bool $onContainer = true;
 
     /**

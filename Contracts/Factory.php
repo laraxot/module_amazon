@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Amazon\Contracts;
 
 use Amazon\ProductAdvertisingAPI\v1\ApiException;
