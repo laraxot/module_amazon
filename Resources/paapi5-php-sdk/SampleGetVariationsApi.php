@@ -111,31 +111,32 @@ function getVariations()
         # Parsing the response
         if ($getVariationsResponse->getVariationsResult() !== null) {
             echo 'Printing VariationSummary', PHP_EOL;
-            if ($getVariationsResponse->getVariationsResult()->getVariationSummary() !== null
-                and $getVariationsResponse->getVariationsResult()->getVariationSummary()->getVariationCount() !== null) {
+        
+            /*if ($getVariationsResponse->getVariationsResult()->getVariationSummary() !== null
+                and $getVariationsResponse->getVariationsResult()->getVariationSummary()->getVariationCount() !== null) {*/
                 echo 'VariationCount: ', $getVariationsResponse->getVariationsResult()->getVariationSummary()
                     ->getVariationCount(), PHP_EOL;
-            }
+            /*}*/
             echo 'Printing first item information in VariationsResult', PHP_EOL;
             $item = $getVariationsResponse->getVariationsResult()->getItems()[0];
             if ($item !== null) {
                 if ($item->getASIN()) {
                     echo 'ASIN: ', $item->getASIN(), PHP_EOL;
                 }
-                if ($item->getItemInfo() !== null and $item->getItemInfo()->getTitle() !== null
-                    and $item->getItemInfo()->getTitle()->getDisplayValue() !== null) {
+                /*if ($item->getItemInfo() !== null and $item->getItemInfo()->getTitle() !== null
+                    and $item->getItemInfo()->getTitle()->getDisplayValue() !== null) {*/
                     echo 'Title: ', $item->getItemInfo()->getTitle()->getDisplayValue(), PHP_EOL;
-                }
+                /*}*/
                 if ($item->getDetailPageURL() !== null) {
                     echo 'Detail Page URL: ', $item->getDetailPageURL(), PHP_EOL;
                 }
-                if ($item->getOffers() !== null
+                /*if ($item->getOffers() !== null
                     and $item->getOffers()->getListings() !== null
                     and $item->getOffers()->getListings()[0]->getPrice() !== null
-                    and $item->getOffers()->getListings()[0]->getPrice()->getDisplayAmount() !== null) {
+                    and $item->getOffers()->getListings()[0]->getPrice()->getDisplayAmount() !== null) {*/
                     echo 'Buying price: ', $item->getOffers()->getListings()[0]->getPrice()
                         ->getDisplayAmount(), PHP_EOL;
-                }
+                /*}*/
             }
         }
         if ($getVariationsResponse->getErrors() !== null) {
