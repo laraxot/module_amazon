@@ -15,7 +15,7 @@ class AmazonController extends Controller {
      * @return Renderable
      */
     public function index() {
-        return view('amazon::index');
+        return view()->make('amazon::index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AmazonController extends Controller {
      * @return Renderable
      */
     public function create() {
-        return view('amazon::create');
+        return view()->make('amazon::create');
     }
 
     /**
@@ -43,7 +43,7 @@ class AmazonController extends Controller {
      * @return Renderable
      */
     public function show($id) {
-        return view('amazon::show');
+        return view()->make('amazon::show');
     }
 
     /**
@@ -54,7 +54,7 @@ class AmazonController extends Controller {
      * @return Renderable
      */
     public function edit($id) {
-        return view('amazon::edit');
+        return view()->make('amazon::edit');
     }
 
     /**

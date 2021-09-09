@@ -13,6 +13,7 @@ declare(strict_types=1);
 |
 */
 
-Route::prefix('amazon')->group(function () {
+/*Route::prefix('amazon')->group(function () {
     Route::get('/', 'AmazonController@index');
 });
+*/
