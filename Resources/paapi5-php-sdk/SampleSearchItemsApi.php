@@ -131,19 +131,19 @@ function searchItems()
                 if ($item->getDetailPageURL() !== null) {
                     echo "DetailPageURL: ", $item->getDetailPageURL(), PHP_EOL;
                 }
-                if ($item->getItemInfo() !== null
+                /*if ($item->getItemInfo() !== null
                     and $item->getItemInfo()->getTitle() !== null
-                    and $item->getItemInfo()->getTitle()->getDisplayValue() !== null) {
+                    and $item->getItemInfo()->getTitle()->getDisplayValue() !== null) {*/
                     echo "Title: ", $item->getItemInfo()->getTitle()->getDisplayValue(), PHP_EOL;
-                }
-                if ($item->getOffers() !== null
+                /*}*/
+                /*if ($item->getOffers() !== null
                     and $item->getOffers() !== null
                     and $item->getOffers()->getListings() !== null
                     and $item->getOffers()->getListings()[0]->getPrice() !== null
-                    and $item->getOffers()->getListings()[0]->getPrice()->getDisplayAmount() !== null) {
+                    and $item->getOffers()->getListings()[0]->getPrice()->getDisplayAmount() !== null) {*/
                     echo "Buying price: ", $item->getOffers()->getListings()[0]->getPrice()
                         ->getDisplayAmount(), PHP_EOL;
-                }
+                /*}*/
             }
         }
         if ($searchItemsResponse->getErrors() !== null) {
