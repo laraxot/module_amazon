@@ -96,16 +96,13 @@ class HomePanel extends XotBasePanel {
      *
      * @return array
      */
-    public function actions():array {
+    public function actions(): array {
         return [
             new Actions\TestAction(),
         ];
     }
 
-    /**
-     * @return bool
-     */
-    public function hasLang() {
+    public function hasLang(): bool {
         return true;
     }
 }
