@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 ////use Laravel\Scout\Searchable;
 //---------- traits
 use Modules\Xot\Contracts\ModelContract;
-use Modules\Xot\Models\Traits\LinkedTrait;
+use Modules\Lang\Models\Traits\LinkedTrait;
 use Modules\Xot\Traits\Updater;
 
 /**
