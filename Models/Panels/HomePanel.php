@@ -67,7 +67,7 @@ class HomePanel extends XotBasePanel {
                 'type' => 'Text',
                 //'name' => 'post[title]',
                 'name' => 'post.title',
-                'col_bs_size' => 12,
+                'col_size' => 12,
             ],
             //*/
             (object) [
@@ -75,14 +75,14 @@ class HomePanel extends XotBasePanel {
                 //'name' => 'post[subtitle]'
                 'name' => 'post.subtitle',
                 'except' => ['index'],
-                'col_bs_size' => 12,
+                'col_size' => 12,
             ],
             (object) [
                 'type' => 'Wysiwyg',
                 //'name' => 'post[subtitle]'
                 'name' => 'post.txt',
                 'except' => ['index'],
-                'col_bs_size' => 12,
+                'col_size' => 12,
             ],
             (object) [
                 'type' => 'Image',
